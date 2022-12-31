@@ -1,3 +1,122 @@
-*{
-    background-color: black;
+:root{
+    --light : #B5D5C5;
+    --light-dark:#F5F5DC;
+    --dark:#B08BBB;
+    --dark-light:#ECA869;
+    --darker:#4a2a3a;
+    --delete:#e94f31;
 }
+*{
+    box-sizing: border-box;
+    background-color: var(--light-dark);
+    margin: 0;
+}
+input,button{
+    border: none;
+    outline: none;
+    
+    appearance: none;
+}
+body{   
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color:var(--dark-light)
+}
+header{
+    max-width: 800px; 
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+header h1{
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    
+}
+.new-task-form{
+    display: flex;
+    
+}
+.new-task-input{
+    flex:1 1 0%;
+    border-radius: 1rem;
+    background-image: linear-gradient(to right,var(--dark),var(--dark-light)) ;
+    padding: 1rem 2rem;
+    margin:1rem;
+    font-size: 1.2rem;
+}
+.new-task-input::placeholder{
+    color:white
+}
+.new-task-button{
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin: 1rem;
+    background-image: linear-gradient(to right,var(--light-dark),var(--light)) ;
+    color:black;
+    cursor: pointer;
+}
+.new-task-button:hover{
+    background-image: linear-gradient(to right,var(--light),var(--light-dark)) ;
+
+}
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+    padding: 1rem;
+
+}
+.task-list h2{
+
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.tasks{
+    border-radius: 1rem;
+    
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    background-color:var(--light);
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+    border-radius: 1rem;
+}
+.content{
+    background-color:var(--light);
+    border-radius: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 0.8rem;
+}
+.actions{
+    background-color:var(--light);
+    border-radius: 1rem;
+}
+.text{
+    background-color: var(--light-);
+    border-radius: 1rem;
+    font-size: 1rem;
+    text-align: left;
+}
+button{
+    background-color: var(--light);
+    color:var(--darker);
+    font-size: 0.96rem;
+    font-weight: bold;
+    font-family: sans-serifs;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.tasks .task .content .text:not(:read-only){
+    color:var(--dark);
+}
+.delete{
+    color:var(--delete)
+}
+

@@ -7,7 +7,52 @@
     <title>TODO List with Javascript</title>
     <link rel="stylesheet" href="./src/style/style.css"/>
 </head>
+
 <body>
+    <header>
+        <h1> Todo list using Javascript </h1>
+        <form class="new-task-form">
+         <input type="text" class="new-task-input" placeholder="write your to do list here">
+         <input type="submit" class="new-task-button"value="Add Task">
+         
+     </form>
+     </header>
+     <main>
+		<section class="task-list">
+			<h2>Tasks</h2>
+
+			<div class="tasks">
+
+				 <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div>
+				<div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</main>
     
 <script src="./src/script/app.js"></script>
 </body>
